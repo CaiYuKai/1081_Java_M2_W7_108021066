@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-public class Main02{
+public class Main02 {
+
     public static void main(String[] args) {
-        Scanner scn=new Scanner(System.in);
-        int n=scn.nextInt();
-        int sum=0;
-        for (int i=3;i<=n;i+=3){
-            sum=sum+i;
+        Scanner scn =new Scanner(System.in);
+        long n=scn.nextLong();
+        double sum=0;
+        for (long i=1;i<=n;i++){
+            sum=sum+1.0/((2*i-1)*(2*i));
         }
         System.out.println(sum);
-    }
-}
+    }}
